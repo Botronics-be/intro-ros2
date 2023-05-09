@@ -18,6 +18,9 @@ get-repos:
 run-camera:
 	ros2 launch zed_wrapper zed2i.launch.py
 
+run-qr-code:
+	ros2 run zbar_ros barcode_reader --ros-args --remap image:=/zed2i/zed_node/rgb/image_rect_color
+
 build:
 	colcon build --symlink-install
 
