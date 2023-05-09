@@ -5,3 +5,4 @@ You can navigate in this directory using branches. Each step of the hand-on is a
 ## Prerequisites
 
 - setuptools <= 58.2.0 to avoid warning when building python packages.
+- zbar-ros, the qrcode reader : `sudo apt-get install ros-${ROS_DISTRO}-zbar-ros`
