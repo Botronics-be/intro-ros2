@@ -29,3 +29,6 @@ clean:
 
 rviz:
 	rviz2 -d src/listener/config/config.rviz
+
+gazebo:
+	ros2 launch gazebo_ros gazebo.launch.py
