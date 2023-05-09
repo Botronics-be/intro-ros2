@@ -26,3 +26,6 @@ build:
 
 clean:
 	rm -rf build install log
+
+rviz:
+	rviz2 -d src/listener/config/config.rviz
