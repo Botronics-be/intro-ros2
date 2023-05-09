@@ -32,3 +32,6 @@ rviz:
 
 gazebo:
 	ros2 launch gazebo_ros gazebo.launch.py
+
+run-laserscan:
+	ros2 run depthimage_to_laserscan depthimage_to_laserscan_node --ros-args --param output_frame:=zed2i_left_camera_frame --remap depth:=/zed2i/zed_node/depth/depth_registered --remap depth_camera_info:=/zed2i/zed_node/depth/camera_info
